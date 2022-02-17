@@ -1,0 +1,358 @@
+*{
+    margin-top: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #01102F;
+    overflow-x: hidden;
+}
+
+nav{
+    box-shadow: 0px 3px 5px orange;
+    width: 100%;
+}
+
+#logo{
+    margin-left: 20px;
+    text-shadow: 0px 0px 20px orange;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-menu{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-shadow: 0px 0px 20px orange;
+    text-decoration: none;
+    font-weight:500;
+}
+
+.nav-menu:hover{
+    color: #ffa500;
+}
+
+.circles1,
+.circles2,
+.circles3,
+.circles4,
+.circles5,
+.circles6,
+.circles7{
+    background-color: rgba(240, 248, 255, 0.010);
+    z-index: -1;
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.circles1{
+    left: 2%;
+    top: 15%;
+}
+
+.circles2{
+    left: 80%;
+    top: 20%;
+}
+
+.circles3{
+    left: 42%;
+    bottom: 60%;
+}
+
+.circles4{
+    left: 35%;
+}
+
+.circles5{
+    left: 80%;
+    bottom: 30%;
+}
+
+.circles6{
+    right: 80%;
+    bottom: 50%;
+}
+
+.circles7{
+    left: 30%;
+}
+
+/* changing css */
+
+#landing-page {
+    height: 95vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wrap{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    text-shadow: 0px 0px 20px gray;
+}
+
+.title{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.desc{
+    font-size: 1.5rem;
+}
+
+#img1 {
+    width: 50%;
+}
+
+/* About Me */
+#about-me-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.img-about-me {
+    width: 70%;
+}
+
+.desc-about-me {
+    font-size: 14px;
+    text-align: justify;
+}
+
+br{
+    display: none;
+}
+
+.cv {
+    border: 3px transparent orangered;
+    border-radius: 0.25rem;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: orangered;
+    font-size: 12px;
+    font-weight: 500;
+    box-shadow: 0px 0px 15px orangered;
+}
+
+.cv:hover {
+    color: white;
+    box-shadow: 0px 0px 15px white;
+
+}
+
+/* Education */
+#education{
+    color: #01102F;
+}
+
+.education {
+    background-color: coral;
+}
+
+.table{
+    margin-bottom: 0px !important;
+    border-color: white;
+}
+
+th,td, td div{
+    color: #01102F;
+    font-weight: 500    ;
+}
+
+/* Skills */
+.skills-img {
+    width: 8rem;
+}
+
+/* Portofolio */
+
+.porto-wrap{
+    justify-content: space-evenly;
+}
+
+.card{
+    box-shadow: 0px 0px 35px gray;
+}
+.card,
+.porto-img{
+    border-radius: 10px;    
+    width: 100%;
+}
+
+.card-title, 
+.card-text, 
+.modal-title,
+.modal-desc, 
+.modal-body{
+    color: #01102F;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+/* Contact Us */
+#form{
+    /* background-color: #ffa500; */
+    border: 1px solid rgba(128, 128, 128, 0.521);
+    border-radius: 20px;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 35px grey;
+
+}
+
+.contact-us-wrap {
+    padding: 0px 30px 50px 30px;
+}
+
+#errorName,
+#errorEmail,
+#errorSubject,
+#errorMessage, 
+#errorNumbers{
+    color: red;
+    font-weight: 500;
+}
+
+/* Footer */
+.logo{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+
+footer{
+    font-size: 14px;
+    background: rgb(117, 133, 138);
+    background: rgba(108, 117, 125);
+}
+
+.footer-wrap{
+    border-bottom: 1px solid #3a4761;
+}
+
+@media screen and (max-width: 480px) {
+    .logo{
+        width: 35px;
+        height: 35px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .circles3{
+        left: 0%;
+        bottom: 60%;
+    }
+
+    .circles1,
+    .circles2{
+        display: none;
+    }
+}
+
+@media screen and (min-width:576px) {
+    .title{
+        font-size: 2.5rem;
+    }
+    
+    .desc{
+        font-size: 1.5rem;
+    }
+
+    .cv{
+        font-size: 16px;
+    }
+
+    footer{
+        font-size: 18px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .circles3{
+        top: 0;
+    }
+
+    .circles2{
+        top: 30%;
+    }
+
+    .circles1{
+        right: 90%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .title{
+        font-size: 3rem;
+    }
+    
+    .desc{
+        font-size: 2.5rem;
+    }
+    /* About Me */
+    .img-about-me {
+        width: 30%;
+    }
+
+    .desc-about-me {
+        font-size: 18px;
+    }
+
+    #about-me-wrap {
+        flex-direction: row;
+    }
+
+    .contact-us-wrap {
+        padding: 0px 80px 100px 80px;
+    }
+}
+
+@media screen and (min-width:992px)  {
+    #landing-page {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .title{
+        padding-bottom: 1rem;
+    }
+    
+    #img1 {
+        width: 35%;
+    }
+
+    br{
+        display: initial;
+    }
+}
